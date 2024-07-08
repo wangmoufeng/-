@@ -1,0 +1,88 @@
+html,boby{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+}
+
+/*游戏容器*/
+.game{
+    width: 420px;
+    height: 720px;
+    outline: 1px solid #000;
+    margin: 0 auto;
+    margin-top: 80px;
+    /**相对定位**/
+    position: relative;
+}
+
+/*主界面*/
+.main{
+    width: 100%;
+    height: 100%;
+    background: url("../images/startgame.png") no-repeat 0 0/cover;
+
+
+    /*绝对定位*/
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+
+
+.begin{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #8f9293;
+    font-size: 22px;
+    color: #fff;
+
+    /**绝对定位**/
+    position: absolute;
+    left: 50%;
+    bottom: 120px;
+    margin-left: -100px;
+
+    border-radius: 8px;
+    border-bottom: 5px solid #6f6f6f;
+}
+
+.begin:active{
+    border-bottom: none;
+}
+
+/**游戏界面场景**/
+.game_start{
+    width: 100%;
+    height: 100%;
+    background: url("../images/true.jpg") repeat-y 0 0/cover;
+     /*绝对定位*/
+     position: absolute;
+     left: 0;
+     top: 0;
+
+     /* 隐藏场景 */
+     display: none;
+ 
+}
+.player{
+    width: 60px;
+    height: 73px;
+    position: absolute;
+    left: calc(50% - 30px);
+    top: 570px;
+    /* transform: translateX(-50%); */
+    background: url(../images/plane.gif)no-repeat 0 0/cover;
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}

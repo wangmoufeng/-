@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打飞机</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <!--游戏容器-->
+    <div class="game">
+
+
+        <!--主界面-->
+        <div class="main">
+            <div class="begin">开始游戏</div>
+        </div>
+
+
+        <!--游戏界面场景-->
+        <div class="game_start">
+
+
+            <!--玩家飞机-->
+            <div class="player"></div>
+
+
+            <!--透明遮罩层-->
+            <div class="mask"></div>
+        </div>
+
+        <audio id="audio" src="./yinping/game_music.mp3"></audio>
+
+        
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/bullet.js"></script>
+
+    </div>
+</body>
+</html>
